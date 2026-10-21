@@ -533,13 +533,6 @@
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
-    <Content Include="MyDbConnection.config" />
-    <Content Include="MyDbConnection.Debug.config">
-      <DependentUpon>MyDbConnection.config</DependentUpon>
-    </Content>
-    <Content Include="MyDbConnection.Release.config">
-      <DependentUpon>MyDbConnection.config</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

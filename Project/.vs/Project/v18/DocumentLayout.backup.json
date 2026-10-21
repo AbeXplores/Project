@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|c:\\users\\abe kumari\\onedrive\\desktop\\github\\zoo_system\\project\\project\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|c:\\users\\abe kumari\\onedrive\\desktop\\github\\zoo_system\\project\\project\\mydbconnection.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|solutionrelative:mydbconnection.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC83FD24-818A-4613-82E3-3A901A1D68F9}|Project.csproj|c:\\users\\abe kumari\\onedrive\\desktop\\github\\zoo_system\\project\\project\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,11 +49,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\Default.aspx",
               "RelativeDocumentMoniker": "Default.aspx",
@@ -67,12 +67,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MyDbConnection.config",
               "DocumentMoniker": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\MyDbConnection.config",
               "RelativeDocumentMoniker": "MyDbConnection.config",
-              "ToolTip": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\MyDbConnection.config*",
-              "RelativeToolTip": "MyDbConnection.config*",
+              "ToolTip": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\MyDbConnection.config",
+              "RelativeToolTip": "MyDbConnection.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-10-21T10:18:31.229Z",
@@ -80,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
               "ToolTip": "C:\\Users\\Abe Kumari\\OneDrive\\Desktop\\Github\\Zoo_System\\Project\\Project\\Web.config",
               "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-10-21T10:15:34.289Z",
               "EditorCaption": ""
