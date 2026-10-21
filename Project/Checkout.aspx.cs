@@ -1,5 +1,6 @@
 ﻿using Project;
 using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI;
@@ -12,7 +13,7 @@ namespace Project
 {
     public partial class Checkout : System.Web.UI.Page
     {
-        string ConnectionString = @"Data Source= localhost;Initial Catalog=zims.db;Integrated Security=True";
+        string ConnectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
         int touristID = 2;
 

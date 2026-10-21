@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,8 @@ namespace Project
     {
         int Tourist_ID;
 
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True";
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
  

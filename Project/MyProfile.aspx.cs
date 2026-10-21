@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
-using System.Security.Cryptography;
-using System.Text;
-
 
 namespace Project
 {
@@ -22,7 +23,8 @@ namespace Project
         string StoredPassword;
         int Country_ID;
 
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True";
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Tourist_ID"] != null)

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,7 +14,8 @@ namespace Project
 {
     public partial class AddEventType : System.Web.UI.Page
     {
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             txtPrice.Attributes["Min"] = 1.ToString();

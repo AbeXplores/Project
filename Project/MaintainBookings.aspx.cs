@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace Project
 {
     public partial class MaintainBookings : System.Web.UI.Page
     {
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(conStr))

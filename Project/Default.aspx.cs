@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -9,6 +10,7 @@ using System.Runtime.Remoting.Lifetime;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,8 +18,9 @@ namespace Project
 {
     public partial class Default : System.Web.UI.Page
     {
-        string connectionString = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
-        
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
@@ -16,7 +18,8 @@ namespace Project
         string surname;
         string name;
 
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;";
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadData();

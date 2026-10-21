@@ -1,6 +1,7 @@
 ﻿using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
@@ -13,8 +14,8 @@ namespace Project
 {
     public partial class TouristSignUp : System.Web.UI.Page
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
-        string connectionString = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)

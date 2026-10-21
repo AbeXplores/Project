@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -10,8 +12,9 @@ namespace Project
 {
     public partial class ProcessPayments : System.Web.UI.Page
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
-        string connectionString = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)

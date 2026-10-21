@@ -17,7 +17,8 @@ namespace Project
     {
         int touristID = 2;
 
-        string ConnectionString = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
+        string ConnectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
 
 
         protected void Page_Load(object sender, EventArgs e)

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
@@ -12,7 +14,8 @@ namespace Project
 {
     public partial class CheckInTourist : System.Web.UI.Page
     {
-        string ConnectionString = @"Data Source= localhost;Initial Catalog=zims.db;Integrated Security=True";
+        string ConnectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         int touristID;
 
         protected void Page_Load(object sender, EventArgs e)

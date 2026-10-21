@@ -7,13 +7,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration; 
 
 namespace Project
 {
     public partial class AddBooking : System.Web.UI.Page
     {
-        string conStr = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;Encrypt=False";
-   
+        string conStr = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         int eventID;
         private double priceEvent = 0.0;
 

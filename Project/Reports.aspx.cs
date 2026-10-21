@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Configuration;
 
 namespace Project
 {
@@ -14,7 +16,8 @@ namespace Project
         SqlDataAdapter adap;
         DataSet ds;
 
-        string conString = @"Data Source=localhost;Initial Catalog=zims.db;Integrated Security=True;TrustServerCertificate=True";
+        string conString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
